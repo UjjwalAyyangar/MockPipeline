@@ -1,0 +1,21 @@
+badge-server-url: http://badges.falsifiable.us
+metadata:
+  access_right: open
+  license: CC-BY-4.0
+  publication_type: article
+  upload_type: publication
+pipelines:
+  dummy_pipeline:
+    envs:
+    - host
+    path: pipelines/dummy_pipeline
+    requirements: {}
+    stages:
+    - setup
+    - run
+    - post-run
+    - validate
+    - teardown
+    vars: []
+popperized:
+- github/popperized
